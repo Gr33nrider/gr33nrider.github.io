@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курсы косметологии</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ Профессиональные курсы косметологии</h1>
+            <p>Обучаем с нуля до мастера международного уровня</p>
+        </header>
+
+        <section class="courses">
+            <div class="course-card" data-course="basic">
+                <h3>Базовый курс</h3>
+                <p>🔹 4 недели<br>🔹 10 практических занятий<br>🔹 Сертификат</p>
+                <p class="price">15 000 ₽</p>
+            </div>
+
+            <div class="course-card" data-course="advanced">
+                <h3>Продвинутый курс</h3>
+                <p>🔹 6 недель<br>🔹 Инъекционные методики<br>🔹 Диплом</p>
+                <p class="price">25 000 ₽</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Записаться на курс</h2>
+            <form id="application-form">
+                <input type="text" id="name" placeholder="Ваше имя" required>
+                <input type="tel" id="phone" placeholder="Телефон" required>
+                <select id="course">
+                    <option value="basic">Базовый курс</option>
+                    <option value="advanced">Продвинутый курс</option>
+                </select>
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="notification" id="notification"></div>
+</body>
+</html>
