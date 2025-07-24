@@ -1,10 +1,9 @@
 // Инициализация Telegram WebApp
 const tg = window.Telegram.WebApp;
 
+tg.expand();
 // Показываем кнопку "Закрыть" в интерфейсе
-tg.MainButton.show();
-tg.MainButton.setText("Закрыть приложение");
-tg.MainButton.onClick(() => tg.close());
+
 
 // Получаем данные пользователя (если разрешено)
 const user = tg.initDataUnsafe.user;
